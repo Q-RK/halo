@@ -8,7 +8,7 @@
         <#list posts as post>
             <url>
                 <loc><#if !globalAbsolutePathEnabled!true>${blog_url!}</#if>${post.fullPath!}</loc>
-                <lastmod>${post.createTime?iso_local}</lastmod>
+                <lastmod>${post.updateTime?iso_local}</lastmod>
             </url>
         </#list>
     </#if>

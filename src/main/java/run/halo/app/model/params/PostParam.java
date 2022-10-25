@@ -98,6 +98,7 @@ public class PostParam extends BasePostParam implements InputConverter<Post> {
         if(content != null && originalContent!=null){
             populateContent(post);
         }
+
         InputConverter.super.update(post);
     }
 }
